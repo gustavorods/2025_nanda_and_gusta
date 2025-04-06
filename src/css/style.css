@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* General settings */
+body {
+    margin: 20px;
+    padding: 0px;
+    background-color: #171717;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilo da barra inteira */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+/* Fundo da barra (trilho) */
+::-webkit-scrollbar-track {
+    background-color: #171717;
+}
+
+  /* Cor do scroll (alça que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+.bold_text {
+    font-weight: bold;
+}
+.color_text {
+    color: #e4cbc6;
+}
+
+.container .spotify_div .spotify_card {
+    height: 200px;
+}
+
+.container .flowers_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-top: 0px;
+}
+
+.container .flowers_div .flowers_photo {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.container .timer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .timer_container p {
+    margin: 7px;
+}
+
+.container .timer_container .time_title {
+    font-size: 20px;
+}
+
+.container .dividing_line {
+    margin: 20px 0px 20px 0px;
+    border: none;
+    border-top: 2px solid #985a92;
+}
+
+.container .text_div{
+    text-align: center;
+}
+
+.container .text_quote{
+    color: rgb(221, 221, 221);
+    font-style: italic;
+}
