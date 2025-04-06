@@ -18,11 +18,30 @@ function updateDate() {
     document.querySelector('.timer_seconds').textContent = pad(segundos);
 }
 
-// Atualiza a cada segundo
+// updates every second
 setInterval(updateDate, 1000);
 
 
+// Waterfall of hearts 
+const heartsContainer = document.querySelector(".hearts-container");
 
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.textContent = "🫶🏻";
+  
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (Math.random() * 10 + 15) + "px";
+  heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
+
+  heartsContainer.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+setInterval(createHeart, 450); // a cada 200ms cai um coração
 
 
 
@@ -31,7 +50,6 @@ setInterval(updateDate, 1000);
 
 
 /*
-
 Pausa pra descansar um pouco kakakaka   
 
 S2 S2 
@@ -39,4 +57,8 @@ S2 S2
 NANDA, EU TE ADOROOOOOOOOOOOOOOOOOO! S2 S2
 
 VOLTEI 
+
+TEM QUE ESPERAR O SITE UPAR NO SERVIDOR (PRA GERAR O LINK)
+
+HORA DE CORRIGIR ALGUNS BUGS
 */
